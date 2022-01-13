@@ -1,4 +1,4 @@
-# Google_Hackathon_Healthcare_DEI
+# Google_Hackathon_Healthcare
 
 
 prompt: How to make healthcare more accessible
