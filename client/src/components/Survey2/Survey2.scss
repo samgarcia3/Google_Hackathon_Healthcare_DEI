@@ -1,0 +1,60 @@
+@use "../../partials/_variables.scss" as *;
+@use "../../partials/mixins.scss" as *;
+
+.survey-2 {
+    padding: 0 1rem;
+
+
+    
+    &__section-title {
+        @include header-3;
+        padding-top: 1.3125rem;
+        margin-bottom: 1rem;
+    }
+
+    &__checkbox {
+        display: flex;
+    }
+
+    &__radio {
+        @include body-options;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 3.5rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    &__list {
+        padding-bottom: 4rem;
+    }
+
+    &__selections {
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    &__action {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 3.5rem;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        background: #FFFFFF;
+        box-shadow: 0px -2px 16px rgba(0, 0, 0, 0.1);
+    }
+
+    &__button {
+        @include button-styling;
+    }
+
+    &__page-indicator {
+        display: flex;
+    }
+}

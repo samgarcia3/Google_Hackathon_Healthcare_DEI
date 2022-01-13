@@ -1,0 +1,47 @@
+@use '../../partials/variables' as *;
+
+.matches-top-item{
+    display: flex;
+    width: 100%;
+    height: 4.5rem;
+    box-shadow: 0 3px 15px 0 rgba($color: #000000, $alpha: 15%);
+    border-radius: 5px;
+    align-items: center;
+    margin-top: 1rem;
+
+    &__name{
+        font-size: 1.25rem;
+        font-weight: 500;
+    }
+
+    &__logo{
+        width: 2.5rem;
+        height: 2.5rem;
+        margin-left: 0.5625rem;
+        margin-right: 1.8125rem;
+    }
+
+    &__label{
+        font-size: 0.875rem;
+        padding: 0.4rem 0;
+    }
+
+    &__container{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    &__box{
+        display: flex;
+        justify-content: space-between;
+        width: 95%;
+        border-bottom: 1px solid $label;
+        padding: 0.4rem 0;
+    }
+
+    &__arrow {
+        height: 15px;
+        width: 12px;
+    }
+}

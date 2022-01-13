@@ -1,0 +1,37 @@
+@use "./variables" as *;
+
+@mixin header-3 {
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 500;
+}
+
+@mixin body-options {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+@mixin bottom-menu-font {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+@mixin top-sub-menu {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+@mixin button-styling {
+    display: flex;
+    align-items: center;
+    gap: 0.5625rem;
+    color: $primary-purple;
+
+    &:hover {
+        cursor: pointer;
+        text-decoration: underline 2px;
+    }
+}

@@ -1,0 +1,10 @@
+.matches-compare {
+    padding: 0 1rem;
+    padding-bottom: 5rem;
+
+    &__list-item {
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}

@@ -1,0 +1,29 @@
+@use '../../partials/variables' as *;
+
+.top-nav-bar {
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 40%);
+    width: 100%;
+    height: 3rem;
+    background-color: $primary-purple;
+
+    &__logo {
+        color: $primary-white;
+        font-family: "Roboto";
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    &__img {
+        width: 20px;
+        margin-left: 1rem;
+        margin-right: 2.25rem;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}

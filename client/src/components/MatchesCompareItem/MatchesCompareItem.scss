@@ -1,0 +1,71 @@
+@use '../../partials/variables' as *;
+
+.matches-compare-item{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 14rem;
+    box-shadow: 0 3px 15px 0 rgba($color: #000000, $alpha: 15%);
+    border-radius: 5px;
+    margin-top: 1.5rem;
+    overflow: hidden;
+
+    &__match{
+        align-self: flex-end;
+        margin-top: 0.5rem;
+        margin-right: 0.5rem;
+    }
+
+    &__inner{
+        display: flex;
+        width: 100%;
+        height: 1rem;
+        background-color: $label;
+    }
+
+    &__outer{
+        display: flex;
+        height: 1rem;
+        background-color: $bar-fill;
+    }
+
+    &__name{
+        font-size: 1.25rem;
+        font-weight: 500;
+    }
+
+    &__logo{
+        width: 2.5rem;
+        height: 2.5rem;
+        margin-left: 0.5625rem;
+        margin-right: 1.8125rem;
+    }
+
+    &__label{
+        font-size: 0.875rem;
+        padding: 0.4rem 0;
+    }
+
+    &__arrow{
+        height: 15px;
+        width: 12px;
+        margin-left: auto;
+        margin-right: 1.625rem;
+    }
+
+    &__container{
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid $label;
+        padding-bottom: 1.25rem;
+        margin: 0 0.625rem;
+    }
+
+    &__text{
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 0.625rem 3.625rem 0.875rem 1rem;
+    }
+}
